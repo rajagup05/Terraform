@@ -15,3 +15,22 @@ Because managing modern IT infrastructure by manually clicking through web conso
 - **Version Control**: Because your infrastructure is written in configuration files (using HashiCorp Configuration Language, or HCL), you can commit it to Git. This allows you to track changes, collaborate effectively, and roll back if something goes wrong.
 - **Lifecycle Management**: Terraform handles the full lifecycle of your infrastructure. It can provision new resources, safely modify them when your needs change, and destroy them cleanly when they are no longer needed
 
+### How Terraform works: 
+
+Terraform operates in a predictable, reliable cycle using three primary commands:
+
+- **terraform plan**: Analyzes your configuration files against your current infrastructure and generates an execution plan outlining exactly what will be created, updated, or deleted.
+- **terraform apply**: Executes the planned actions, communicating with the provider APIs to build or modify your actual infrastructure.
+- **terraform destroy**: Safely dismantles all the resources defined in your configuration files, cleaning up environments to prevent unexpected billing.
+
+
+
+
+
+
+
+
+
+
+
+
