@@ -1,2 +1,0 @@
-
-## VM Instance TF script
