@@ -1,5 +1,5 @@
 
-## Depemds On in terraform
+## Depends On in terraform
 
 In Terraform, depends_on is a meta-argument used to define explicit dependencies between resources, modules, or data sources.
 
