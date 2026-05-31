@@ -1,19 +1,14 @@
+resource google_compute_firewall "ssh-firewall" {
+    name = "ssh-firewall"
+    network = "default"
 
-resource google_compute_instance "instance" {
-    
-    name = "test-instance"
-    zone = "europe-west2-a"
-    machine_type = "n1-standard-1"
-    
-    tags = ["allow-ssh"]  # FIREWALL
-    
-    boot_disk {
-        initialize_params {
-            image = "debian-cloud/debian-11"
-        }
+    allow {
+        protocol = "tcp"
+        ports = ["22"]
     }
-    network_interface {
-        network = "default"
-    }
+
+    source_ranges = ["0.0.0.0/0"]
+
+    target_tags = ["allow-ssh"]
 
 }
